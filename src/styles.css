@@ -1,0 +1,19 @@
+
+.owl-prev,
+.owl-next {
+
+  padding: 5px;
+  margin: 5px;
+  width: 45px;
+  height: 45px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  outline: none;
+  border-radius: 100%;
+  border:none;
+  font-size: 24px;
+}
+
+/* Optionally, you can add padding to the buttons for more space */
+
+

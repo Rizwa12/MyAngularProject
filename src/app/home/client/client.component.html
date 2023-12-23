@@ -1,0 +1,61 @@
+<section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          What Says Our Customers
+        </h2>
+      </div>
+       <div> 
+        <div class="row">
+            <div class="col-md-6" *ngFor="let customer of customers">
+                <div class="item">
+                    <div class="box">
+                        <div class="detail-box">
+                          <p>
+                            {{customer.description}}
+                          </p>
+                          <h6>
+                            {{customer.name}}
+                          </h6>
+                          <p>
+                            {{customer. additionalInfo}}
+                          </p>
+                        </div>
+                        <div class="img-box">
+                            <img [src]="customer.imagePath" alt="" class="box-img" style="width: 100%;">
+                        </div>
+                       
+                      </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center">
+              <button type="button" role="presentation" class="owl-prev" (click)="prevCustomer()">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </button>
+            
+            
+              <button type="button" role="presentation" class="owl-next" (click)="nextCustomer()">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </button>
+           
+          </div>
+       
+        
+      </div>
+     </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+   
